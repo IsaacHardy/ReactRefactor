@@ -49,9 +49,9 @@ console.log('Hello, World');
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-var APP_ID = 'mmoMgOQzCeRE8Ad4vmRkHMLYyTwEPPrAGXMEfDFm';
-var API_KEY = 'xvocUSdI55mrUV7m7fb0ylyXO2kQ6EML2mlBDEoY';
-var APP_URL = 'https://api.parse.com/1/classes/Todo';
+var APP_ID = 'LLl8Ff5tMoqxhRFl72r4lvhLKjPZWQsz3mrMXicu';
+var API_KEY = 'pg9DDZkYoP0X6um3bNnmZfAQfV46cx5F3TgvsrDh';
+var APP_URL = 'https://api.parse.com/1/classes/rrdata';
 
 exports['default'] = {
   APP_ID: APP_ID,
