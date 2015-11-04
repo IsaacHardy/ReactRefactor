@@ -4,7 +4,10 @@ import moment from 'moment';
 import Backbone from 'backbone';
 import parse from './parse_auth';
 import {TodoCollection} from './resources';
-import {TodoView} from './views';
+// import {TodoView} from './views';
+import React from 'react';
+import ReactDom from 'react-dom';
+import ReactTwo from './views/react2_todo';
 
 $.ajaxSetup({
   headers: {
@@ -13,13 +16,22 @@ $.ajaxSetup({
   }
 });
 
-let todos = new TodoCollection();
 
-todos.fetch().then(function() {
+// let todos = new TodoCollection();
+
+// todos.fetch().then(function() {
   
-  $('.wrapper').html(new TodoView(todos).render().$el);
+//   $('.wrapper').html(new React2View(todos).render());
 
-});
+// });
+
+
+let el = document.querySelector('.wrapper');
+
+ReactDom.render(
+  <ReactTwo/>,
+  el
+);
 
 
 console.log('Hello, World');
